@@ -66,6 +66,12 @@
       z-index: 9999;
       background: url(plugins/simple-pre-loader/images/loader-64x/Preloader_2.gif) center no-repeat #fff;
     }
+    a.navbar-brand {
+   
+      border-radius: 200px;
+    
+    }
+
   </style>
 
 </head>
@@ -99,13 +105,21 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="index.html"><img class="lazyestload" data-src="img/Bharti Salon (1).png" src="" alt="logo" height="100px"></a>
+          <a class="navbar-brand" href="index.html"><img class="lazyestload" data-src="img/Bharti Salon (1).png" src="" alt="logo"></a>
   
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
+
+              <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">About Us</a>
+  
+                  <ul class="dropdown-menu">
+                    <li><a href="about.html">About Us</a></li>
+                  </ul>
+                </li>
   
               <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Services</a>
@@ -115,7 +129,7 @@
                 </ul>
               </li>
 
-              <li class=" dropdown megaDropMenu nav-item " >
+              <!-- <li class=" dropdown megaDropMenu nav-item " >
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Store</a>
 
                 <ul class="row dropdown-menu justify-content-md-between">
@@ -154,80 +168,94 @@
                     </ul>
                   </li>
                 </ul>
-              </li>
+              </li> -->
   
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Pages</a>
+             
+                  <!-- <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="appointment.html">Appointment</a></li> -->
 
-                <ul class="dropdown-menu">
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="appointment.html">Appointment</a></li>
+                  <!-- <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Team</a> -->
 
-                  <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-toggle" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Team</a>
-
-                    <ul class="dropdown-menu submenu">
+                    <!-- <ul class="dropdown-menu submenu">
                       <li><a href="member.html">Our Team</a></li>
                       <li><a href="single-member-profile.html">Single Member</a></li>
                     </ul>
-                  </li>
+                  </li> -->
 
-                  <li class="dropdown">
+                   <!-- <li class="dropdown">
                     <a href="javascript:void(0)" class="dropdown-toggle" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
 
                     <ul class="dropdown-menu submenu">
-                      <li><a href="gallery-v1.html">Gallery 3 Col</a></li>
-                      <li><a href="gallery-v2.html">Gallery 4 Col</a></li>
-                    </ul>
-                  </li>
+                      <li><a href="gallery-v1.html">Gallery 3 Col</a></li> -->
+                      <!-- <li><a href="gallery-v2.html">Gallery 4 Col</a></li> -->
+                    <!-- </ul>
+                  </li>  -->
 
-                  <li><a href="login-signup.html">Login SignUp</a></li>
+                  <!-- <li><a href="login-signup.html">Login SignUp</a></li>
 
                   <li><a href="404.html">404 Not Found</a></li>
 
-                  <li><a href="coming-soon.html">Coming Soon</a></li>
+                  <li><a href="coming-soon.html">Coming Soon</a></li> -->
+               
+
+
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Gallery</a>
+                <ul class="dropdown-menu">
+                  <li><a href="gallery-v1.html">Gallery</a></li>
+                  <!-- <li><a href="single-service.html">Service Details</a></li> -->
                 </ul>
               </li>
 
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Blog</a>
 
-                <ul class="dropdown-menu menu-xl-right">
+               <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Blog</a>
+                <ul class="dropdown-menu">
+                  <li><a href="blog-left-sidebar.html">Blog</a></li>
+                  <!-- <li><a href="single-service.html">Service Details</a></li> -->
+                </ul>
+              </li>
+
+
+              <!-- <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Blog</a> -->
+
+                <!-- <ul class="dropdown-menu menu-xl-right">
                   <li class="dropdown">
                     <a href="javascript:void(0)" class="dropdown-toggle" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                    <ul class="dropdown-menu submenu">
-                      <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
-                      <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
-                      <li><a href="blog-fullwidth.html">Fullwidth</a></li>
-                    </ul>
-                  </li>
-
-                  <li class="dropdown">
+                    <ul class="dropdown-menu submenu"> -->
+                      <!-- <li><a href="blog-right-sidebar.html">Right Sidebar</a></li> -->
+                      <!-- <li><a href="blog-left-sidebar.html">Left Sidebar</a></li> -->
+                      <!-- <li><a href="blog-fullwidth.html">Fullwidth</a></li> -->
+                    <!-- </ul>
+                  </li> -->
+ <!-- </ul>
+              </li>
+                  <!-- <li class="dropdown">
                     <a href="javascript:void(0)" class="dropdown-toggle" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single Blog</a>
                     <ul class="dropdown-menu submenu">
                       <li><a href="blog-single-right-sidebar.html">Right Sidebar</a></li>
                       <li><a href="blog-single-left-sidebar.html">Left Sidebar</a></li>
                       <li><a href="blog-single-fullwidth.html">Fullwidth</a></li>
                     </ul>
-                  </li>
-                </ul>
-              </li>
+                  </li> -->
+                
   
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Components</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Contact Us</a>
                 <ul class="dropdown-menu menu-right">
-                  <li><a href="tabs-pagination.html">Tab &amp; Pagination</a></li>
-                  <li><a href="accrodion.html">Accrodions</a></li>
-                  <li><a href="buttons-alerts.html">Buttons &amp; Alerts</a></li>
+                  <!-- <li><a href="tabs-pagination.html">Tab &amp; Pagination</a></li> -->
+                  <li><a href="accrodion.html">Contact</a></li>
+                  <!-- <li><a href="buttons-alerts.html">Buttons &amp; Alerts</a></li> -->
                 </ul>
               </li>
             </ul>
           </div>
 
-          <div class="cart_btn">
+          <!-- <div class="cart_btn">
             <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="badge">0</span></a>
-          </div>
+          </div> -->
           <!-- header search ends-->
         </div>
       </nav>
@@ -244,19 +272,19 @@
         <div class="slide slideResize slide1" style="background-image: url(img/home/home-slider-1.jpg);">
           <div class="container">
             <div class="slide-inner1 common-inner">
-              <span style="color: palevioletred" class="h1 from-bottom ">Welcome to Bharati Salon</span><br>
-              <span  style="color: palevioletred" class="h4 from-bottom">The best place of Mindfullness & Healthy body</span><br>
+              <span  class="h1 from-bottom ">Welcome to Bharati Salon</span><br>
+              <span   class="h4 from-bottom">The best place of Mindfullness & Healthy body</span><br>
               <a href="javascript:void(0)" class="btn btn-primary first-btn waves-effect waves-light scale-up">More Details</a>
             </div>
           </div>
         </div>
 
         <!-- Slide Two -->
-        <div class="slide slideResize slide2" style="background-image: url(img/home/home-slider-2.jpg);">
+        <div class="slide slideResize slide2" style="background-image: url(img/home/home-slider-21.jpg);">
           <div class="container">
             <div class="slide-inner2 common-inner">
-              <span style="color: palevioletred" class="h1 from-bottom">Skin Care Solution</span><br>
-              <span style="color: palevioletred"  class="h4 from-bottom">We provide best screen care & aging solution </span><br>
+              <span class="h1 from-bottom">Skin Care Solution</span><br>
+              <span   class="h4 from-bottom">We provide best screen care & aging solution </span><br>
               <a href="javascript:void(0)" class="btn btn-primary first-btn waves-effect waves-light scale-up">More Details</a>
             </div>
           </div>
@@ -267,8 +295,8 @@
           <div class="container">
             <div class="common-inner slide-inner3">
               <!-- <img src="img/favicon.png" alt="Logo Icon" class="img-responsive"> -->
-              <span style="color: palevioletred" class="h1 from-bottom">Bharati Salon</span><br>
-              <span style="color: palevioletred" class="h4 from-bottom">The real place of Mindfullness & Healthy body</span><br>
+              <span  class="h1 from-bottom">Bharati Salon</span><br>
+              <span  class="h4 from-bottom">The real place of Mindfullness & Healthy body</span><br>
               <a href="cart.html" class="btn btn-primary first-btn waves-effect waves-light scale-up">Buy Now</a>
             </div>
           </div>
@@ -278,8 +306,8 @@
         <div class="slide slideResize slide4" style="background-image: url(img/home/home-slider-4.jpg);">
           <div class="container">
             <div class="common-inner slide-inner4">
-              <span style="color: palevioletred" class="h1 from-bottom">Bharati Salon</span><br>
-              <span style="color: palevioletred" class="h4 from-bottom"> Its a beautiful theme and easy to customize</span><br>
+              <span  class="h1 from-bottom">Bharati Salon</span><br>
+              <span  class="h4 from-bottom"> Its a beautiful theme and easy to customize</span><br>
               <a href="javascript:void(0)" class="btn btn-primary first-btn waves-effect waves-light scale-up">More Details</a>
             </div>
           </div>
@@ -300,7 +328,7 @@
             </div>
             <div class="col-sm-6 col-xs-12">
               <div class="aboutInfo">
-                <h2>Welcome to Bharati Eyebrows Threading Salon</h2>
+                <h2>Welcome to Bharati Salon</h2>
                 <h3>Welcome to Bharati Eyebrows Threading Salon – your sanctuary for beauty and serenity in the heart of the city. Nestled amidst the hustle and bustle, our salon offers a tranquil retreat where beauty is crafted, one thread at a time.</h3>
                 <p>With years of expertise, we specialize in the ancient and precise art of eyebrow threading, transforming your beauty experience into a moment of relaxation and rejuvenation.
 
@@ -345,7 +373,7 @@
                           <li><a href="#correctivecolor" data-toggle="tab">Bleach<span></span></a></li>
                           <li><a href="#haircut" data-toggle="tab">D-Tan Pack<span></span></a></li>
                           <li><a href="#partialfoil" data-toggle="tab">Hair Heena<span></span></a></li>
-                          <li><a href="#extensionpertrack" data-toggle="tab">Heena Designs<span></span></a></li>
+                          <li><a href="#extensionpertrack" data-toggle="tab">Hair Color <span></span></a></li>
                           <!-- <li><a href="#extensionpertrack" data-toggle="tab">Hair Cut<span></span></a></li> -->
                         </ul>
                       </div>
@@ -423,15 +451,16 @@
                           <div class="tab-pane" id="extensionpertrack">
                             <div class="varietyContent">
                               <img src="img/home/variety-7.jpg" data-src="img/home/variety-7.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Heena Designs</h3>
+                              <h3>Hair color</h3>
                               <!-- <h4>$40.00 Per Head</h4> -->
                               <p>
-                                In various cultures, henna body art is believed to improve partner bonding. Brides often get beautiful henna patterns along their hands and feet before their wedding day. And the designs may include symbols of love, fertility, images of bride and bridegroom, mandala designs, etc.</p>
+                                Hair coloring works by coating each strand with color (non-permanent color) or by penetrating each hair cuticle, entering the hair cortex, and bonding with the hair (permanent color). While non-permanent hair color can be shampooed out eventually, permanent color, as the name suggests, permanently colors the hair.</p>
 
                               
                               <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
                             </div>
                           </div>
+                          
                           
                         </div>
                       </div>
@@ -1165,10 +1194,10 @@
           <div class="filter-container isotopeFilters">
             <ul class="list-inline filter">
               <li class="active"><a href="#" data-filter="*">all item</a></li>
-              <li><a href="#" data-filter=".hair">Hair</a></li>
+              <!-- <li><a href="#" data-filter=".hair">Hair</a></li>
               <li><a href="#" data-filter=".makeup">Facials</a></li>
               <li><a href="#" data-filter=".facial">Threading</li>
-              <li><a href="#" data-filter=".massage">Heena Designs</a></li>
+              <li><a href="#" data-filter=".massage">Heena Designs</a></li> -->
             </ul>
           </div>
         </div>
@@ -1178,9 +1207,9 @@
         <div class="col-sm-3 isotopeSelector hair">
           <div class="card">
             <div class="card-img">
-              <img class="img-full lazyestload" data-src="img/home/gallery-1.jpg" src="img/home/gallery-1.jpg" alt="Image" >
+              <img class="img-full lazyestload" data-src="img/home/gallery-3.jpg" src="img/home/gallery-3.jpg" alt="Image" >
               <div class="overlay-content">
-                <a href="img/home/gallery-1.jpg" data-fancybox="images" >
+                <a href="img/home/gallery-3.jpg" data-fancybox="images" >
                   <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Skin Care</h5>
                 </a>
               </div>
@@ -1256,9 +1285,9 @@
         <div class="col-sm-3 isotopeSelector facial">
           <div class="card">
             <div class="card-img">
-              <img class="img-full lazyestload" data-src="img/home/gallery-7.jpg" src="img/home/gallery-7.jpg" alt="Image" >
+              <img class="img-full lazyestload" data-src="img/home/gallery-7.jpeg" src="img/home/gallery-7.jpeg" alt="Image" >
               <div class="overlay-content">
-                <a href="img/home/gallery-7.jpg" data-fancybox="images" >
+                <a href="img/home/gallery-7.jpeg" data-fancybox="images" >
                   <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Skin Care</h5>
                 </a>
               </div>
@@ -1269,9 +1298,9 @@
         <div class="col-sm-3 isotopeSelector massage">
           <div class="card">
             <div class="card-img">
-              <img class="img-full lazyestload" data-src="img/home/gallery-8.jpg" src="img/home/gallery-8.jpg" alt="Image" >
+              <img class="img-full lazyestload" data-src="img/home/gallery-8.jpeg" src="img/home/gallery-8.jpeg" alt="Image" >
               <div class="overlay-content">
-                <a href="img/home/gallery-8.jpg" data-fancybox="images">
+                <a href="img/home/gallery-8.jpeg" data-fancybox="images">
                   <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Skin Care</h5>
                 </a>
               </div>
@@ -1838,7 +1867,7 @@
     </section> -->
 
 <!-- CONTACT US SECTION -->
-    <section class="clearfix contactSection padding">
+    <section class="clearfix contactSection padding" style="background-color: lightpink">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-7 col-xl-8">
@@ -1871,6 +1900,7 @@
 
           <div class="col-md-6 col-lg-5 col-xl-4">
             <div class="holdingInfo patternbg">
+              <p style="font-size: 20px;color: darkmagenta;">BHARATI SALON</p>
               <p>At Bharati, we understand that beauty is personal. We listen, we advise, and we tailor our services to match your unique needs and preferences..</p>
               <ul>
                 <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1008 Riley St. Suite 5, Folsom, CA 95630, United State </li>
@@ -2118,14 +2148,14 @@
 
             <div class="col-md-7">
               <div class="copyRightText">
-                <p>&copy; 2020 Copyright <a target="_blank" href="http://www.iamabdus.com/">Angel Beauty Spa Salon Bootstrap Template</a> by <a target="_blank" href="http://www.iamabdus.com/">Abdus</a></p>
+                <p>&copy; 2020 Copyright Bharti Salon</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
-  </div> -->
+  </div> 
 
 
   <!-- FANCY SEARCH -->
