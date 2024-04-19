@@ -61,16 +61,17 @@
 
       <!-- TOP INFO BAR -->
       <div class="top-info-bar">
-          <div class="container">
-            <div class="top-bar-right">
-              <ul class="list-inline">
-                <!-- <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> info@yourdomain.com</a></li> -->
-                 <li><a href="#">We accept walk-In</a></li>
-                <li><span><i class="fa fa-phone" aria-hidden="true"></i> Call Us: (916)467-0571</span></li>
-              </ul>
-            </div>
+        <div class="container">
+          <div class="top-bar-right">
+            <ul class="list-inline">
+              <!-- <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> info@yourdomain.com</a></li> -->
+               <li><a href="#">We accept walk-In (Threading Only)</a></li>
+              <li><span><i class="fa fa-phone" aria-hidden="true"></i> Call Us: (916) 467-0571</span></li>
+              <li><span><i class="fa fa-mobile-phone" aria-hidden="true"></i>  (916) 293-9265</span></li>
+            </ul>
           </div>
         </div>
+      </div>
 
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-md main-nav navbar-light">
@@ -95,7 +96,7 @@
               </li>
 
               <li class="nav-item ">
-                <a class="nav-link" href="single-service.html">Service</a>
+                <a class="nav-link" href="service.html">Service</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="gallery-v1.html">Gallery</a>
@@ -108,7 +109,13 @@
               </li> 
             </ul>
           </div>
-        </div>
+          <div class="cart_btn">
+            <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="badge">0</span></a>
+          </div>
+
+        
+
+
       </nav>
       
     </header>
@@ -117,54 +124,60 @@
 
 <!-- VARIETY SECTION -->
    
-<section class="clearfix contactSection padding" style="background-color: lightpink">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-7 col-xl-8">
-          <div class="contactTitle">
-            <h3>Get in touch</h3>
-          </div>
-
-          <div class="contactForm">
-            <div id="alert"></div><!--Response Holder-->
-            <form action="https://themes.iamabdus.com/angel/1.2/mail/contact-form.php" id="angelContactForm" method="post">
-            <div class="form-group">
-                <input type="text" name="contact-form-name" class="form-control" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" name="contact-form-email" class="form-control" placeholder="Your Email" required>
-              </div>
-             <div class="form-group">
-                <input type="text" name="contact-form-mobile" class="form-control" placeholder="Your Mobile" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="contact-form-message" placeholder="Your Message" required></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" id="contact-submit-btn" class="btn btn-primary first-btn">send Message</button>
-
-              </div>
-            </form>
-          </div>
+<section class="clearfix contactSection padding" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-7 col-xl-8">
+        <div class="contactTitle">
+          <h3>Get in touch</h3>
         </div>
 
-        <div class="col-md-6 col-lg-5 col-xl-4">
-          <div class="holdingInfo patternbg">
-              <p style="font-size: 20px;color: darkmagenta;">BHARATI SALON</p>
-            <p>At Bharati, we understand that beauty is personal. We listen, we advise, and we tailor our services to match your unique needs and preferences..</p>
-            <ul>
-              <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1008 Riley St. Suite 5, Folsom, CA 95630, United State </li>
-              <li><i class="fa fa-phone" aria-hidden="true"></i> (916)467 0571</li>
-              <!-- <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a> <br><a href="mailto:info2@example.com">info2@example.com</a></li> -->
-            </ul>
-          </div>
+        <div class="contactForm">
+          <div id="alert"></div><!--Response Holder-->
+          <form action="https://themes.iamabdus.com/angel/1.2/mail/contact-form.php" id="angelContactForm" method="post">
+          <div class="form-group">
+              <input type="text" name="contact-form-name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="contact-form-email" class="form-control" placeholder="Your Email" required>
+            </div>
+           <div class="form-group">
+              <input type="text" name="contact-form-mobile" class="form-control" placeholder="Your Mobile" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="contact-form-message" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary first-btn">send Message</button>
+
+            </div>
+          </form>
         </div>
       </div>
+
+      <div class="col-md-6 col-lg-5 col-xl-4">
+        <div class="holdingInfo patternbg">
+          <p style="font-size: 20px;">BHARATI SALON</p>
+          <p>Visit us Monday through Sunday, to indulge in our pampering services. Relax and rejuvenate with us!"</p>
+          <p>Mon to Sat : 10Am to 8pm</p>
+          <p>Sun : 10Am to 7pm</p>
+          <ul>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1008 Riley St. Suite 5, Folsom, CA 95630, United State </li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i> (916)467 0571</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a> <br></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+
+      
     </div>
-  </section>
+  </div>
+</section>
 <section style=" display: flex; justify-content: center; margin-top: 50px;">
     <!-- FOOTER -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24179.499012105938!2d-73.87113!3d40.752404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fb966abd2eb%3A0x994660fcce6d1273!2sQueens%20eyebrows%20threading%20beauty%20salon!5e0!3m2!1sen!2sin!4v1712973049285!5m2!1sen!2sin" width="600" height="450" style="border:1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.10207246452!2d-121.17184982407409!3d38.66952217177364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ae514b7a5151f%3A0x896df7c59e0224ce!2sBharati%20Salon!5e0!3m2!1sen!2shk!4v1713463413428!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
     
   </div>
@@ -206,7 +219,7 @@
         <div class="col-sm-3 col-xs-12">
           <div class="footerText">
             <a href="index.html" class="footerLogo">
-                <a class="navbar-brand" href="index.html"><img class="lazyestload" data-src="img/Bharti Salon (1).png"  width="202" height="159" src="" alt="logo"></a>
+                <a class="navbar-brand" href="index.html"><img class="lazyestload" data-src="img/bharati-logo.jpeg"  width="202" height="139" src="" alt="logo"></a>
               
 
             </a>
@@ -303,23 +316,23 @@
     </div>
   </div>
 
-   <!-- COPY RIGHT -->
-   <div class="clearfix copyRight">
+    <!-- COPY RIGHT -->
+    <div class="clearfix copyRight">
       <div class="container">
         <div class="row">
           <div class="col-md-5 order-md-1">
             <ul class="list-inline socialLink">
               <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
               <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+              <li><a href="javascript:void(0)"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+              <!-- <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li> -->
             </ul>
           </div>
 
           <div class="col-md-7">
             <div class="copyRightText">
-              <p>&copy; 2020 Copyright Bharti Salon</p>
+              <p>&copy; 2023 Copyright Bharati Salon</p>
             </div>
           </div>
         </div>

@@ -51,6 +51,14 @@
    
   
   }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: palevioletred;
+  
+    
+  }
 </style>
 
 </head>
@@ -66,8 +74,10 @@
         <div class="container">
           <div class="top-bar-right">
             <ul class="list-inline">
-              <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> We accept walk-In</a></li>
-              <li><span><i class="fa fa-phone" aria-hidden="true"></i>(916)467 0571</span></li>
+              <!-- <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> info@yourdomain.com</a></li> -->
+               <li><a href="#">We accept walk-In (Threading Only)</a></li>
+              <li><span><i class="fa fa-phone" aria-hidden="true"></i> Call Us: (916) 467-0571</span></li>
+              <li><span><i class="fa fa-mobile-phone" aria-hidden="true"></i>  (916) 293-9265</span></li>
             </ul>
           </div>
         </div>
@@ -109,7 +119,13 @@
               </li> 
             </ul>
           </div>
-        </div>
+          <div class="cart_btn">
+            <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="badge">0</span></a>
+          </div>
+
+        
+
+
       </nav>
       
     </header>
@@ -146,11 +162,11 @@
                           <li><a href="#braidstwist" data-toggle="tab" class="active">Threading <span></span></a></li>
                           <li><a href="#haircolor" data-toggle="tab">Waxing<span></span></a></li>
                           <li><a href="#hairextension" data-toggle="tab">Facials<span></span></a></li>
-                          <li><a href="#correctivecolor" data-toggle="tab">Bleach<span></span></a></li>
-                          <li><a href="#haircut" data-toggle="tab">D-Tan Pack<span></span></a></li>
-                          <li><a href="#partialfoil" data-toggle="tab">Hair Heena<span></span></a></li>
-                          <li><a href="#extensionpertrack" data-toggle="tab">Hair Color<span></span></a></li>
-                          <!-- <li><a href="#extensionpertrack" data-toggle="tab">Hair Cut<span></span></a></li> -->
+                          <li><a href="#correctivecolor" data-toggle="tab">Bleach(Only face)<span></span></a></li>
+                          <li><a href="#haircut" data-toggle="tab">D-Tan Body Pack<span></span></a></li>
+                          <li><a href="#partialfoil" data-toggle="tab">Hair Heena & Hair Color</a></li>
+                          <!-- <li><a href="#extensionpertrack" data-toggle="tab">Hair Color<span></span></a></li> -->
+                          <li><a href="#extensionpertrack" data-toggle="tab">Hair Cut<span></span></a></li>
                         </ul>
                       </div>
 
@@ -161,23 +177,31 @@
                               <img src="img/home/variety.jpg" data-src="img/home/variety.jpg" alt="Image Variety" class="img-responsive lazyestload">
                               <h3>Threading</h3>
                               <!-- <h3>Threading</h3> -->
-<h4>Eyebrows ..................................................................       $12</h4>
-<h4>UpperLips...................................................................       $7</h4>
-<h4>Full Face + Threading ................................................        $7</h4>
-<h4>Deep Chin ...................................................................       $8</h4>
-<h4>Side Burns..................................................................      $10</h4>
-<h4>Side Of Necks..............................................................       $15</h4>
-<h4>Full Face + Neck..........................................................        $49</h4>
-<h4>CheeKs...........................................................................       $8</h4>
-<h4>Men's CheeKs...............................................................        $20</h4>
-<h4>ForHead.........................................................................        $7</h4>
-<h4>Lower Lip.......................................................................      $3</h4>
-<h4>Chin................................................................................       $7</h4>
-<h4>Neck..............................................................................        $10</h4>
-<h4>Jawline...........................................................................       $10</h4>
-<h4>Unilaow..........................................................................        $15</h4>
-<h4>Half face(without forhead & Eyebrows......................  $30</h4>
-<h4> Men's Eyebrows ............................................................$15</h4>
+
+                              
+
+  
+
+
+<ul>
+  <h4><li class="item">Eyebrows <span>$12</span></li></h4>
+  <h4><li class="item">Forhead <span>$7</span></li></h4>
+  <h4><li class="item">Upper Lips <span>$12</span></li></h4>
+  <h4><li class="item">Lower Lips <span>$3</span></li></h4>
+  <h4><li class="item">Full Face Threading <span>$40</span></li></h4>
+  <h4><li class="item">Chin <span>$7</span></li></h4>
+  <h4><li class="item">Chin co<span>$8</span></li></h4>
+  <h4><li class="item">Neck <span>$10</span></li></h4>
+  <h4><li class="item">Sideburns<span>$10</span></li></h4>
+  <h4><li class="item">Jawline<span>$10</span></li></h4>
+  <h4><li class="item">Side of Neck <span>$15</span></li></h4>
+  <h4><li class="item">Unibrow <span>$4</span></li></h4>
+  <h4><li class="item">Full face Neck <span>$48</span></li></h4>
+  <h4><li class="item">Half Face(without Forhead & Eyebrow)<span>$30</span></li></h4>
+  <h4><li class="item">Chicks <span>$8</span></li></h4>
+  <h4><li class="item"> Men's Chicks <span>$20</span></li></h4>
+  <h4><li class="item">Men's Eyebrows<span>$15</span></li></h4>
+  
 
                               <p style="font-size: 18px; font-style: italic"> Threading is much healthier for the skin than waxing, and it doesn't cause ingrown hairs. It's inexpensive, fast and relatively painless (with a skilled practitioner). Threading is suitable for all skin types, even those too sensitive for laser hair removal or waxing.</p>
                               <a href="javascript:void(0)" class="btn btn-primary first-btn" data-toggle="modal" data-target="#appoinmentModal">make An Appoinment</a>
@@ -188,23 +212,44 @@
                             <div class="varietyContent">
                               <img src="img/home/variety-2.jpg" data-src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive lazyestload">
                               <h3>Waxing</h3>
-                              <!-- <h4></h4>
-                              <h3>Threading</h3> -->
-                              <span><h4>Eyebrow ............................................................$15               Unibrow Wax...............................................................       $7 </h4> </span>
+  <h4><li class="item"> Women's Eyebrows <span>$15</span></li></h4>
+  <h4><li class="item">Men's Eyebrows <span>$20</span></li></h4>
+  <h4><li class="item">Shoulder<span>$25</span></li></h4>
+  <h4><li class="item">Upper Lips <span>$10</span></li></h4>
+  <h4><li class="item">Lower Lips<span>$8</span></li></h4>
+  <h4><li class="item">Chin <span>$12</span></li></h4>
+  <h4><li class="item">Neck co<span>$18</span></li></h4>
+  <h4><li class="item">Forhead <span>$10</span></li></h4>
+  <h4><li class="item">Sideburns<span>$13</span></li></h4>
+  <h4><li class="item">Full Face<span>$50</span></li></h4>
+  <h4><li class="item">Under Arms <span>$20</span></li></h4>
+  <h4><li class="item">Full Arms <span>$45</span></li></h4>
+  <h4><li class="item">Half Arms <span>$35</span></li></h4>
+  <h4><li class="item">Half Legs<span>$45</span></li></h4>
+  <h4><li class="item">Full Face + Neck <span>$60</span></li></h4>
+  <h4><li class="item"> Full legs <span>$55</span></li></h4>
+  <h4><li class="item">Stomach Full<span>$37</span></li></h4>
+  <h4><li class="item">Stomach half<span>$30</span></li></h4>
+  <h4><li class="item">Stomach half<span>$30</span></li></h4>
+  <h4><li class="item">Back Full<span>$65</span></li></h4>
+  <h4><li class="item">Back Lower<span>$25</span></li></h4>
+  <h4><li class="item">Back Mid<span>$28</span></li></h4>
+  <h4><li class="item">Back Upper<span>$28</span></li></h4>
+  <h4><li class="item">Toe<span>$15</span></li></h4>
+  <h4><li class="item">Fingers<span>$15</span></li></h4>
+  <h4><li class="item">Butt(full)<span>$30</span></li></h4>
+  <h4><li class="item">Butt(strip)<span>$22</span></li></h4>
+  <h4><li class="item">Chest(full)<span>$35</span></li></h4>
+  <h4><li class="item">Chest(strip)<span>$25</span></li></h4>
+  <h4><li class="item">Brazilian<span>$65</span></li></h4>
+  <h4><li class="item">Bikni Line<span>$30</span></li></h4>
+  <h4><li class="item">Hands<span>$17</span></li></h4>
+  <h4><li class="item">Thigh<span>$20</span></li></h4>
+  <h4><li class="item">Full Body<span>$250</span></li></h4>
+  
+                              
+                              
                              
-                              <span><h4>Upper Lip.............................................................$10                Lower Lip...................................................................       $8 </h4> </span>
-                               <span><h4>Chin.......................................................................$12                Neck........................................................................       $18 </h4> </span>
-                                <span><h4>Forhead...............................................................$10                Side Brow..................................................................       $15 </h4> </span>
-                                 <span><h4>Full Face............................................................$50                Underarms...................................................................       $20 </h4> </span> <span><h4>Shoulder.............................................................$25                Full Arms...................................................................       $45 </h4> </span> 
-                                 <span><h4>Half Arms..............................................................$35                Half Legs...................................................................       $45 </h4> </span> 
-                                <span><h4>Full Legs................................................................$55                Full Face + Neck.......................................................       $60 </h4> </span>
-                                 <span><h4>Stomach + full........................................................$37               Stomach + Half......................................................       $30 </h4> </span> 
-                                 <span><h4>Full Back................................................................$65                Upper Back...............................................................       $65</h4> </span> 
-                                 <span><h4>Mid Back..................................................................$28               Lower Back............................................................       $25 </h4> </span>
-                                  <span><h4>Toes ...................................................................$15                Fingers..........................................................................       $15 </h4> </span>
-
-                                   <span><h4>Hand...............................................................$17                Chest Full.........................................................................       $35 </h4> </span> 
-                                   <span><h4>Chest Strip..............................................................$25                Thigh......................................................................       $20 </h4> </span> <span><h4>Brazalio..............................................................$65                Bikli Live.....................................................................       $30 </h4> </span> <span><h4>But Full..............................................................$35                But Strip........................................................................       $25 </h4> </span> 
                                    <p style="font-size: 18px; font-style: italic">Waxing is the process of hair removal from the root by using a covering of a sticky substance, such as wax, to adhere to body hair, and then removing this covering and pulling out the hair from the follicle</p>
                               <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
                             </div>
@@ -215,19 +260,24 @@
                               <img src="img/home/variety-3.jpg" data-src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive lazyestload">
                               <h3>Facials</h3>
                               <!-- <h4></h4> -->
+
+                              <h4>Fruit Facial(Express)......................................................       $60  -----40 Mins</h4>
                               <h4>Papaya Facial..................................................................       $60  -----40 Mins</h4>
-                              <h4>Pearl Facial......................................................................       $80  -----60 Mins</h4>
-                              <h4>Lotus Gold.........................................................................       $65  -----45 Mins</h4>
+                              <h4>Whitening Facial..............................................................       $60  -----40 Mins</h4>
+                              <h4>VLcc Insta Glow Facial
+                                  ...................................................       $65  -----45 Mins</h4>
+                              <h4> Lotus Pearl Facial.............................................................       $65  -----60 Mins</h4>
+                              <h4>Lotus Gold Facial.............................................................       $65  -----45 Mins</h4>
+                              <h4> Pearl Facial......................................................................       $80  -----60 Mins</h4>
+                              <h4>Diamond Facial...................................................................       $80  -----60 Mins</h4>
+                              <h4>Saffron Chandan Facial.....................................................       $80  -----60 Mins</h4>
+
+                              <h4>Shanaz Gold Facial..............................................................       $90  -----60 Mins</h4>
                               <h4>Anti Acne Treatments Facial..........................................       $95  -----60 Mins</h4>
-                              <h4>Saffron Chandan.............................................................       $80  -----60 Mins</h4>
-                              <h4>VLcc Insta Glow
-                                ................................................................       $65  -----45 Mins</h4>
-                                <h4>Lotus Facial.........................................................................       $65  -----45 Mins</h4>
-                                <h4>Diamond Facial...................................................................       $80  -----60 Mins</h4>
-                                <h4>Shanaz Gold.........................................................................       $90  -----60 Mins</h4>
+                             
                                 <h2>MEN's</h2>
-                                <h4>Men Facial Basic....................................................................       $80  -----45 Mins</h4>
-                                <h4>Men Facial  .............................................................................       $100  -----60 Mins</h4>
+                                <h4>Men Facial(Choose any)......................................................       $100  -----60 Mins</h4>
+                               
 
 
                               <p style="font-size: 18px; font-style: italic">Facials provide deep(er) exfoliation than you can achieve at home. Exfoliation smoothes skin, allows for great penetration of products (i.e. moisturizers or serums), unclogs pores, improves skin ability to retain hydration, and evens skin tone to just name a few benefits.</p>
@@ -238,21 +288,23 @@
                           <div class="tab-pane" id="correctivecolor">
                             <div class="varietyContent">
                               <img src="img/home/variety-4.jpg" data-src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Bleach</h3>
+                              <h3>Bleach(Face Only)</h3>
                               <!-- <h4>$13.00 Per Head</h4> -->
-                              <h4>Herbal Fruit Bleach.............................................................................       $35  </h4>
-                              <h4>Oxy Bleach............................................................................................       $45  </h4>
-                              <h4>Diamond Bleach...................................................................................       $45  </h4>
-                              <h4>VLcc Bleach.............................................................................................       $35  </h4>
-                              <h4>Olivia Beach............................................................................................       $35  </h4>
-                              <h4>Haldi Chandan Bleach............................................................................       $45  </h4>
-                              <h4>De Tan Mask Tan.....................................................................................       $45  </h4>
+
+
+                              <h4><li class="item">Herbal Fruit Bleach <span>$35</span></li></h4>
+                              <h4><li class="item">Oxy Bleach<span>$45</span></li></h4>
+                              <h4><li class="item">Diamond Bleach <span>$45</span></li></h4>
+                              <h4><li class="item">VLcc Bleach <span>$45</span></li></h4>
+                              <h4><li class="item">Olivia Beach<span>$35</span></li></h4>
+                              <h4><li class="item">Haldi Chandan Bleach <span>$35</span></li></h4>
+                              <h4><li class="item">De Tan Mask  <span>$45</span></li></h4>
+
+                           
                               
                             
                              
-                              <h4>Anti Acne Treatments Facial..................................................................       $95  </h4>
-                              <h4>Shanaz Gold Facial(Women)...................................................................       $90  </h4>
-                              <h4>Shanaz Gold Facial(Men).........................................................................       $90  </h4>
+          
 
 
 
@@ -267,12 +319,13 @@
                           <div class="tab-pane" id="haircut">
                             <div class="varietyContent">
                               <img src="img/home/variety-5.jpg" data-src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>D-Tan Pack</h3>
+                              <h3>D-Tan Body Pack</h3>
                               <!-- <h4>$48.00 Per Head</h4> -->
-                              <h4 >Full Arms/Half Arms .............................................................................       $65 - $50</h4>
-                              <h4>Full Leg/Half Legs..................................................................................       $100 - $85</h4>
-                              <h4>Full Back/Half Back ................................................................................       $80 - $70</h4>
-                              <h4>Full Body Pack .........................................................................................       $240</h4>
+                              <h4><li class="item">Full Arms/Half Arms <span>$65- $50</span></li></h4>
+                              <h4><li class="item">Full Leg/Half Legs<span>$100 - $85</span></li></h4>
+                              <h4><li class="item">Full Back/Half Back <span>$100 - $85</span></li></h4>
+                              <h4><li class="item">Full Body Pack  <span>$240</span></li></h4>
+                            
 
                               <p style="font-size: 18px; font-style: italic">D-Tan Pack is a face pack that is designed to help reduce the appearance of dark spots and tan, brighten the skin complexion, and provide a healthy glow. It contains natural ingredients like cucumber, aloe vera, and chamomile, which work together to soothe and moisturize the skin..</p>
                               <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
@@ -287,17 +340,22 @@
                           <div class="tab-pane" id="partialfoil">
                             <div class="varietyContent">
                               <img src="img/home/variety-6.jpg" data-src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Heena</h3>
+                           
                               <!-- <h4>$10.00 Per Head</h4> -->
+                              <h3>Organic Hair Heena</h3>
+                              <h4><li class="item">Root Touch Up<span> $60+</span></li></h4>
+                              <h4><li class="item">Neck Length<span>  $70+</span></li></h4>
+                              <h4><li class="item">Shoulder Length <span>$80+</span></li></h4>
+                              <h4><li class="item">Mid Back Length <span>$100</span></li></h4>
+
+
                               <h3>Hair Color</h3>
+                              <!-- <h4>$40.00 Per Head</h4> -->
                               <h4>Root Touch Up.........................................................................................       $70+</h4>
                               <h4>Full Hair Color..........................................................................................       $85+</h4>
                               <h4>Color Correction .....................................................................................       $100+</h4>
-                              <h3>Organic Heena</h3>
-                              <h4>Root Touch Up.........................................................................................       $60+</h4>
-                              <h4>Neck Length.............................................................................................       $70+</h4>
-                              <h4>Shoulder Length......................................................................................       $80+</h4>
-                              <h4>Mid Back Length......................................................................................       $100+</h4>
+                             
+                         
 
                               
                               <p style="font-size: 18px; font-style: italic">
@@ -306,23 +364,32 @@
                             </div>
                           </div>
 
+                      
+
 
 
                           <div class="tab-pane" id="extensionpertrack">
                             <div class="varietyContent">
                               <img src="img/home/variety-7.jpg" data-src="img/home/variety-7.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Color</h3>
+                              <h3>Hair Cut</h3>
                               <!-- <h4>$40.00 Per Head</h4> -->
-                              <h4>Root Touch Up.........................................................................................       $70+</h4>
-                              <h4>Full Hair Color..........................................................................................       $85+</h4>
-                              <h4>Color Correction .....................................................................................       $100+</h4>
+                              <h4><li class="item">Hair Trim  <span>$40</span></li></h4>
+                              <h4><li class="item">U- Shaped Hair Cut<span>$50</span></li></h4>
+                              <h4><li class="item">Short Layer Hair Cut<span>$85 and up</span></li></h4>
+                              
                               <p style="font-size: 18px; font-style: italic">
-                                Hair coloring works by coating each strand with color (non-permanent color) or by penetrating each hair cuticle, entering the hair cortex, and bonding with the hair (permanent color). While non-permanent hair color can be shampooed out eventually, permanent color, as the name suggests, permanently colors the hair..</p>
+                                Indulge in luxury with a voluminous cascade of curls, framing your face in timeless glamour.
+                                Embrace sophistication with a classic long-layered cut, accentuating your natural beauty with effortless grace."</p>
 
                               
                               <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
                             </div>
                           </div>
+
+                          
+
+
+                            
 
                           <!--  -->
                           
@@ -348,17 +415,7 @@
                         </ul>
                       </div> -->
 
-                      <!-- <div class="col-md-7 col-lg-8">
-                        <div class="tab-content">
-                          <div class="tab-pane active" id="braidstwist1">
-                            <div class="varietyContent">
-                              <img src="img/home/variety.jpg" data-src="img/home/variety.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Threading</h3>
-                              <!-- <h4>$25.00 Per Head</h4> -->
-                              <!-- <p>Threading is much healthier for the skin than waxing, and it doesn't cause ingrown hairs. It's inexpensive, fast and relatively painless (with a skilled practitioner). Threading is suitable for all skin types, even those too sensitive for laser hair removal or waxing..</p>
-                              <a href="#" class="btn btn-primary first-btn" data-toggle="modal" data-target="#appoinmentModal">make An Appoinment</a>
-                            </div>
-                          </div> --> 
+                      
     
                           <!-- <div class="tab-pane" id="haircolor1">
                             <div class="varietyContent">
@@ -808,7 +865,7 @@
             <div class="offerContent">
               <img class="lazyestload" src="img/home/offer-1.jpeg" data-src="img/home/offer-1.jpeg" alt="Image Offer">
               <div class="offerMasking">
-                <div class="offerTitle"><h4><a href="#">Threading</a></h4></div>
+                <div class="offerTitle"><h4><a href="#"> Threading</a></h4></div>
               </div>
               <div class="offerPrice"><h5>$12</h5></div>
             </div>
@@ -817,9 +874,9 @@
             <div class="offerContent">
               <img class="lazyestload" data-src="img/home/offer-2.jpeg" src="img/home/offer-2.jpeg" alt="Image Offer">
               <div class="offerMasking">
-                <div class="offerTitle"><h4><a href="#">Waxing</a></h4></div>
+                <div class="offerTitle"><h4><a href="#">Oil Massage</a></h4></div>
               </div>
-              <div class="offerPrice"><h5>$15</h5></div>
+              <div class="offerPrice"><h5>$40</h5></div>
             </div>
           </div>
           <div class="col-sm-3 col-xs-12">
@@ -828,7 +885,7 @@
               <div class="offerMasking">
                 <div class="offerTitle"><h4><a href="#">Facials</a></h4></div>
               </div>
-              <div class="offerPrice"><h5>$60</h5></div>
+              <div class="offerPrice"><h5>$60+</h5></div>
             </div>
           </div>
           <div class="col-sm-3 col-xs-12">
@@ -843,6 +900,186 @@
         </div>
       </div>
     </section> 
+
+
+    <section class="clearfix productSection"> 
+      <div class="container">
+        <div class="secotionTitle">
+          <h2><span>Natural </span>Our Products</h2>
+        </div>
+    
+        <div class="row">
+          <div class="col-12">
+            <div class="owl-carousel productSlider">
+              <div class="slide">
+                <div class="row">
+                  <div class="col-md-6 order">
+                    <div class="productImage">
+                      <img src="img/home/home-product.jpg" data-src="img/home/home-product.jpg" alt="Image Product" class="img-responsive lazyestload">
+                      <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+    
+                  <div class="col-md-6">
+                    <div class="productInfo">
+                      <h3> Ayurvedic Oil Traditional Head Massage</h3>
+                      <h4>$40................15 mins</h4>
+                      <ul class="list-inline rating">
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                      </ul>
+                      <p>Ayurvedic Hair Oils are known to hydrate the scalp and the hair. It is a boon for people with dry hair. It acts as a conditioner by providing shine to the hair.
+                          Applying a good ayurvedic hair oil just to the ends of the hair may act as a hair mask or a pre-conditioning hair mask.
+                          A scalp massage with an ayurvedic oil for hair is a great way to relax. It calms your nerves and is known to provide relief to headaches.
+                          Oil massages help the scalp and improve blood circulation. This promotes overall hair health and helps with hair growth, like Blue Nectar’s Briganantadi Hairfall control oil for Healthy Scalp, that is light and non greasy and it is formuated with ayurvedic herbs to control hair fall and make the hair stronger and shinier.
+                         </p>
+                      <!-- <a href="javascript:void(0)" class="btn btn-primary first-btn">read more</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div> 
+    
+              <div class="slide">
+                <div class="row">
+                  <!-- <div class="col-md-6 order">
+                    <div class="productImage">
+                      <img src="img/home/home-product.jpg" data-src="img/home/home-product.jpg" alt="Image Product" class="img-responsive lazyestload">
+                      <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                    </div>
+                  </div> -->
+    
+                  <!-- <div class="col-md-6">
+                    <div class="productInfo">
+                        <h3> Ayurvedic Oil Traditional Head Massage</h3>
+                        <h4>$35</h4>
+                      <ul class="list-inline rating">
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                      </ul>
+                      <p>Ayurvedic Hair Oils are known to hydrate the scalp and the hair. It is a boon for people with dry hair. It acts as a conditioner by providing shine to the hair.
+                          Applying a good ayurvedic hair oil just to the ends of the hair may act as a hair mask or a pre-conditioning hair mask.
+                          A scalp massage with an ayurvedic oil for hair is a great way to relax. It calms your nerves and is known to provide relief to headaches.
+                          Oil massages help the scalp and improve blood circulation. This promotes overall hair health and helps with hair growth, like Blue Nectar’s Briganantadi Hairfall control oil for Healthy Scalp, that is light and non greasy and it is formuated with ayurvedic herbs to control hair fall and make the hair stronger and shinier. </p>
+                      <a href="javascript:void(0)" class="btn btn-primary first-btn">read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -
+
+    <!-- PRICING SECTION -->
+    <section class="clearfix pricingSection patternbg">
+      <div class="container">
+        <div class="secotionTitle">
+          <h2><span>Amazing </span>Services Pricing</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="priceTableWrapper">
+              <div class="priceImage">
+                <img src="img/home/pricing-1.jpeg" data-src="img/home/pricing-1.jpg" alt="Image Price" class="img-responsive lazyestload">
+                <div class="maskImage">
+                  <h3>Threading</h3>
+                </div>
+                <div class="priceTag">
+                  <h4>$40</h4>
+                </div>
+              </div>
+              <div class="priceInfo">
+                <ul class="list-unstyled">
+                  <li>Full Face Threading</li>
+                  <!-- <li>Nail Cutting And Styling</li>
+                  <li>Spa Therapy</li>
+                  <li>Hair Coloring</li> -->
+                </ul>
+                <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="priceTableWrapper">
+              <div class="priceImage">
+                <img src="img/home/pricing-2.jpg" data-src="img/home/pricing-2.jpg" alt="Image Price" class="img-responsive lazyestload">
+                <div class="maskImage">
+                  <h3>Waxing</h3>
+                </div>
+                <div class="priceTag">
+                  <h4>$255</h4>
+                </div>
+              </div>
+              <div class="priceInfo">
+                <ul class="list-unstyled">
+                  <li>Full Body Wax</li>
+                  <!-- <li>Nail Cutting And Styling</li>
+                  <li>Spa Therapy</li>
+                  <li>Hair Coloring</li> -->
+                </ul>
+                <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="priceTableWrapper">
+              <div class="priceImage">
+                <img src="img/home/pricing-3.jpg" data-src="img/home/pricing-3.jpg" alt="Image Price" class="img-responsive lazyestload">
+                <div class="maskImage">
+                  <h3>D-Tan Pack</h3>
+                </div>
+                <div class="priceTag">
+                  <h4>$130</h4>
+                </div>
+              </div>
+              <div class="priceInfo mb-md-0">
+                <ul class="list-unstyled">
+                  <li>Shahnaj Gold facial</li>
+                  <!-- <li>Gold facial</li>
+                  <li>Spa Therapy</li>
+                  <li>Hair Coloring</li> -->
+                </ul>
+                <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="priceTableWrapper">
+              <div class="priceImage">
+                <img src="img/home/pricing-4.jpg" data-src="img/home/pricing-4.jpg" alt="Image Price" class="img-responsive lazyestload">
+                <div class="maskImage">
+                  <h3>Waxing</h3>
+                </div>
+                <div class="priceTag">
+                  <h4>$115</h4>
+                </div>
+              </div>
+              <div class="priceInfo mb-0">
+                <ul class="list-unstyled">
+                  <li>Full Legs Wax ,Arms wax and Under Arms Wax</li>
+                  <!-- <li>Full Arms Wax</li>
+                  <li>Under Arms Wax </li>
+                  <li>Hair Coloring</li> -->
+                </ul>
+                <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
 <!-- PRICING 4 COL SECTION -->
     <!-- <section class="clearfix pricingSection">
@@ -1088,183 +1325,189 @@
 
 
       <!-- CONTACT US SECTION -->
-    <section class="clearfix contactSection padding" style="background-color: lightpink">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-7 col-xl-8">
-            <div class="contactTitle">
-              <h3>Get in touch</h3>
-            </div>
-
-            <div class="contactForm">
-              <div id="alert"></div><!--Response Holder-->
-              <form action="https://themes.iamabdus.com/angel/1.2/mail/contact-form.php" id="angelContactForm" method="post">
-              <div class="form-group">
-                  <input type="text" name="contact-form-name" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                  <input type="email" name="contact-form-email" class="form-control" placeholder="Your Email" required>
-                </div>
-               <div class="form-group">
-                  <input type="text" name="contact-form-mobile" class="form-control" placeholder="Your Mobile" required>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="contact-form-message" placeholder="Your Message" required></textarea>
-                </div>
-                <div class="form-group">
-                  <button type="submit" id="contact-submit-btn" class="btn btn-primary first-btn">send Message</button>
-
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-5 col-xl-4">
-            <div class="holdingInfo patternbg">
-               <p style="font-size: 20px;color: darkmagenta;">BHARATI SALON</p>
-              <p>At Bharati, we understand that beauty is personal. We listen, we advise, and we tailor our services to match your unique needs and preferences..</p>
-              <ul>
-                <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1008 Riley St. Suite 5, Folsom, CA 95630, United State </li>
-                <li><i class="fa fa-phone" aria-hidden="true"></i> (916)467 0571</li>
-                <!-- <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a> <br><a href="mailto:info2@example.com">info2@example.com</a></li> -->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-     <!-- FOOTER -->
-   <footer style="background-image: url(img/home/footer-bg.jpg);">
-    <!-- BACK TO TOP BUTTON -->
-     <a href="#pageTop" class="backToTop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-    <!-- FOOTER INFO -->
-    <div class="clearfix footerInfo">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-xs-12">
-            <div class="footerText">
-              <a href="index.html" class="footerLogo">
-                  <a class="navbar-brand" href="index.html"><img class="lazyestload" data-src="img/Bharti Salon (1).png"  width="202" height="159" src="" alt="logo"></a>
-                
-
-              </a>
-              <p>We invite you to explore the beauty transformations we've facilitated and experience the Bharati difference for yourself. </p>
-              <p> Each client’s journey with us is a step towards discovering their own unique beauty, enhanced and celebrated.</p>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-12 paddingLeft">
-            <div class="footerInfoTitle">
-              <h4>Useful Links</h4>
-            </div> 
-            <div class="useLink">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-  
-                <li class="nav-item ">
-                  <a class="nav-link" href="about.html">About Us</a>
-                </li>
-  
-                <li class="nav-item ">
-                  <a class="nav-link" href="service.html">Service</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="gallery-v1.html">Gallery</a>
-                </li>
-                 <li class="nav-item ">
-                  <a class="nav-link" href="blog-left-sidebar.html">Blog</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="accrodion.html">Contact Us</a>
-                </li> 
-              </ul>
-            </div> 
-           </div> 
-           <div class="col-sm-3 col-xs-12">
-            <div class="footerInfoTitle">
-              <h4>Gallery</h4>
-            </div>
-            <div class="footerGallery row">
-              <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-66.jpeg" src="img/home/gallery-66.jpeg" alt="gallery-img">
-                </a>
-              </div>
-
-              <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-3.jpg" src="img/home/gallery-3.jpg" alt="gallery-img">
-                </a>
-              </div>
-
-              <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-5.jpeg" src="img/home/gallery-5.jpeg" alt="gallery-img">
-                </a>
-              </div>
-
-              <div class="col-4 col-md-6 col-lg-4">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-55.jpeg" src="img/home/gallery-55.jpeg" alt="gallery-img">
-                </a>
-              </div>
-
-              <div class="col-4 col-md-6 col-lg-4">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-8.jpg" src="img/home/gallery-8.jpg" alt="gallery-img">
-                </a>
-              </div>
-
-              <div class="col-4 col-md-6 col-lg-4">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-2.jpg" src="img/home/gallery-2.jpg" alt="gallery-img">
-                </a>
-              </div>
-            </div>
-          </div> 
-
-          <div class="col-sm-3 col-xs-12">
-            <div class="footerInfoTitle">
-              <h4>Newsletters</h4>
-            </div>
-
-            <div class="footerText">
-              <p>Sign up for our mailing list to get latest updates and offers.</p>
-              <form class="input-group">
-                <input type="text" class="form-control" required="" placeholder="Email address" aria-describedby="basic-addon21">
-                <button type="submit" class="input-group-addon" id="basic-addon21">Send</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <!-- COPY RIGHT -->
-      <div class="clearfix copyRight">
+      <section class="clearfix contactSection padding" >
         <div class="container">
           <div class="row">
-            <div class="col-md-5 order-md-1">
-              <ul class="list-inline socialLink">
-                <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-              </ul>
+            <div class="col-md-6 col-lg-7 col-xl-8">
+              <div class="contactTitle">
+                <h3>Get in touch</h3>
+              </div>
+  
+              <div class="contactForm">
+                <div id="alert"></div><!--Response Holder-->
+                <form action="https://themes.iamabdus.com/angel/1.2/mail/contact-form.php" id="angelContactForm" method="post">
+                <div class="form-group">
+                    <input type="text" name="contact-form-name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="contact-form-email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                 <div class="form-group">
+                    <input type="text" name="contact-form-mobile" class="form-control" placeholder="Your Mobile" required>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="contact-form-message" placeholder="Your Message" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" id="contact-submit-btn" class="btn btn-primary first-btn">send Message</button>
+  
+                  </div>
+                </form>
+              </div>
             </div>
+  
+            <div class="col-md-6 col-lg-5 col-xl-4">
+              <div class="holdingInfo patternbg">
+                <p style="font-size: 20px;">BHARATI SALON</p>
+                <p>Visit us Monday through Sunday, to indulge in our pampering services. Relax and rejuvenate with us!"</p>
+                <p>Mon to Sat : 10Am to 8pm</p>
+                <p>Sun : 10Am to 7pm</p>
+                <ul>
+                  <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1008 Riley St. Suite 5, Folsom, CA 95630, United State </li>
+                  <li><i class="fa fa-phone" aria-hidden="true"></i> (916)467 0571</li>
+                  <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a> <br></li>
+                </ul>
+              </div>
+            </div>
+            
+            
+  
+            
+          </div>
+        </div>
+      </section>
 
-            <div class="col-md-7">
-              <div class="copyRightText">
-                <p>&copy; 2020 Copyright Bharati Salon</p>
+     <!-- FOOTER -->
+     <footer style="background-image: url(img/home/footer-bg.jpg);">
+      <!-- BACK TO TOP BUTTON -->
+       <a href="#pageTop" class="backToTop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+      <!-- FOOTER INFO -->
+      <div class="clearfix footerInfo">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-xs-12">
+              <div class="footerText">
+                <a href="index.html" class="footerLogo">
+                    <a class="navbar-brand" href="index.html"><img class="lazyestload" data-src="img/bharati-logo.jpeg"  width="202" height="139" src="" alt="logo"></a>
+                  
+  
+                </a>
+                <p>We invite you to explore the beauty transformations we've facilitated and experience the Bharati difference for yourself. </p>
+                <p> Each client’s journey with us is a step towards discovering their own unique beauty, enhanced and celebrated.</p>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12 paddingLeft">
+              <div class="footerInfoTitle">
+                <h4>Useful Links</h4>
+              </div> 
+              <div class="useLink">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+    
+                  <li class="nav-item ">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+    
+                  <li class="nav-item ">
+                    <a class="nav-link" href="service.html">Service</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="gallery-v1.html">Gallery</a>
+                  </li>
+                   <li class="nav-item ">
+                    <a class="nav-link" href="blog-left-sidebar.html">Blog</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="accrodion.html">Contact Us</a>
+                  </li> 
+                </ul>
+              </div> 
+             </div> 
+             <div class="col-sm-3 col-xs-12">
+              <div class="footerInfoTitle">
+                <h4>Gallery</h4>
+              </div>
+              <div class="footerGallery row">
+                <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
+                  <a href="gallery-v1.html">
+                    <img class="lazyestload" data-src="img/home/gallery-66.jpeg" src="img/home/gallery-66.jpeg" alt="gallery-img">
+                  </a>
+                </div>
+  
+                <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
+                  <a href="gallery-v1.html">
+                    <img class="lazyestload" data-src="img/home/gallery-3.jpg" src="img/home/gallery-3.jpg" alt="gallery-img">
+                  </a>
+                </div>
+  
+                <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
+                  <a href="gallery-v1.html">
+                    <img class="lazyestload" data-src="img/home/gallery-5.jpeg" src="img/home/gallery-5.jpeg" alt="gallery-img">
+                  </a>
+                </div>
+  
+                <div class="col-4 col-md-6 col-lg-4">
+                  <a href="gallery-v1.html">
+                    <img class="lazyestload" data-src="img/home/gallery-55.jpeg" src="img/home/gallery-55.jpeg" alt="gallery-img">
+                  </a>
+                </div>
+  
+                <div class="col-4 col-md-6 col-lg-4">
+                  <a href="gallery-v1.html">
+                    <img class="lazyestload" data-src="img/home/gallery-8.jpg" src="img/home/gallery-8.jpg" alt="gallery-img">
+                  </a>
+                </div>
+  
+                <div class="col-4 col-md-6 col-lg-4">
+                  <a href="gallery-v1.html">
+                    <img class="lazyestload" data-src="img/home/gallery-2.jpg" src="img/home/gallery-2.jpg" alt="gallery-img">
+                  </a>
+                </div>
+              </div>
+            </div> 
+  
+            <div class="col-sm-3 col-xs-12">
+              <div class="footerInfoTitle">
+                <h4>Newsletters</h4>
+              </div>
+  
+              <div class="footerText">
+                <p>Sign up for our mailing list to get latest updates and offers.</p>
+                <form class="input-group">
+                  <input type="text" class="form-control" required="" placeholder="Email address" aria-describedby="basic-addon21">
+                  <button type="submit" class="input-group-addon" id="basic-addon21">Send</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+  
+        <!-- COPY RIGHT -->
+        <div class="clearfix copyRight">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5 order-md-1">
+                <ul class="list-inline socialLink">
+                  <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="javascript:void(0)"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                  <!-- <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li> -->
+                </ul>
+              </div>
+  
+              <div class="col-md-7">
+                <div class="copyRightText">
+                  <p>&copy; 2023 Copyright Bharati Salon</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
   </div>
 
 
