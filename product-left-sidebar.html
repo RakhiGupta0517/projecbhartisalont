@@ -43,7 +43,18 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  
+  <style>
+      .blinking-line {
+                        /* border-bottom: 2px solid black; Adjust thickness and color as needed */
+                        animation: blink 1s infinite; /* Blinking animation */
+                    }
+                
+                    @keyframes blink {
+                        50% {
+                            opacity: 0; /* Makes the line invisible */
+                        }
+                    }
+  </style>
 
 </head>
 

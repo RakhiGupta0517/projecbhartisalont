@@ -44,14 +44,21 @@
   <![endif]-->
 
   <style>
-      a.navbar-brand {
-   
-   border-radius: 200px;
+    .blinking-line {
+                        /* border-bottom: 2px solid black; Adjust thickness and color as needed */
+                        animation: blink 1s infinite; /* Blinking animation */
+                    }
+                
+                    @keyframes blink {
+                        50% {
+                            opacity: 0; /* Makes the line invisible */
+                        }
+                    }
  
    
   
  
- }
+ 
   </style>
 
 </head>
@@ -59,69 +66,72 @@
 <body id="body" class="body-wrapper static">
   <div class="se-pre-con"></div>
   <div class="main-wrapper">
-    <!-- HEADER -->
-    <header id="pageTop" class="header">
+      <!-- HEADER -->
+      <header id="pageTop" class="header">
 
-     <!-- TOP INFO BAR -->
-     <div class="top-info-bar">
-      <div class="container">
-        <div class="top-bar-right">
-          <ul class="list-inline">
-            <!-- <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> info@yourdomain.com</a></li> -->
-             <li><a href="#">We accept walk-In (Threading Only)</a></li>
-            <li><span><i class="fa fa-phone" aria-hidden="true"></i> Call Us: (916) 467-0571</span></li>
-            <li><span><i class="fa fa-mobile-phone" aria-hidden="true"></i>  (916) 293-9265</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-md main-nav navbar-light">
-        <div class="container">
-     
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand" href="index.html"><img class="lazyestload" data-src="img/Bharti Salon (1).png" src="" alt="logo"></a>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-
-              <li class="nav-item ">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-
-              <li class="nav-item ">
-                <a class="nav-link" href="service.html">Service</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="gallery-v1.html">Gallery</a>
-              </li>
-               <li class="nav-item ">
-                <a class="nav-link" href="blog-left-sidebar.html">Blog</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="accrodion.html">Contact Us</a>
-              </li> 
-            </ul>
+          <!-- TOP INFO BAR -->
+          <div class="top-info-bar">
+            <div class="container">
+              <div class="top-bar-right">
+                <ul class="list-inline blinking-line">
+    
+                   
+                    
+                 
+                   <li><a href="#">We accept walk-In (Threading Only)</a></li>
+                  <li><span><i class="fa fa-phone" aria-hidden="true"></i> Call Us: (916) 467-0571</span></li>
+                  <li><span><i class="fa fa-mobile-phone" aria-hidden="true"></i>  (916) 293-9265</span></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="cart_btn">
-            <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="badge">0</span></a>
-          </div>
-
-        
-
-
-      </nav>
+    
+          <!-- NAVBAR -->
+          <nav class="navbar navbar-expand-md main-nav navbar-light">
+            <div class="container">
+         
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+    
+              <a class="navbar-brand" style="width:20%; background-color: black; border-radius: 250px"  href="index.html"><img class="lazyestload"  data-src="img/home/logo.jpeg" src="" alt="logo"></a>
       
-    </header>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+    
+                  <li class="nav-item ">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+    
+                  <li class="nav-item ">
+                    <a class="nav-link" href="service.html">Service</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="gallery-v1.html">Gallery</a>
+                  </li>
+                   <li class="nav-item ">
+                    <a class="nav-link" href="blog-left-sidebar.html">Blog</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="accrodion.html">Contact Us</a>
+                  </li> 
+                </ul>
+              </div>
+              <div class="cart_btn">
+                <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="badge">0</span></a>
+              </div>
+    
+            
+    
+    
+          </nav>
+          
+        </header>
 
 
 
@@ -178,138 +188,138 @@
       </div>
     </section>
 
+ <!-- FOOTER -->
+ <footer style="background-image: url(img/home/footer-bg.jpg);">
+  <!-- BACK TO TOP BUTTON -->
+   <a href="#pageTop" class="backToTop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+  <!-- FOOTER INFO -->
+  <div class="clearfix footerInfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-xs-12">
+          <div class="footerText">
+            <a href="index.html" class="footerLogo">
+                <a class="navbar-brand" href="index.html"><img  class="lazyestload" data-src="img/bharati-logo.jpeg"  width="202"  src="" alt="logo"></a>
+              
 
-   <!-- FOOTER -->
-   <footer style="background-image: url(img/home/footer-bg.jpg);">
-    <!-- BACK TO TOP BUTTON -->
-     <a href="#pageTop" class="backToTop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-    <!-- FOOTER INFO -->
-    <div class="clearfix footerInfo">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-xs-12">
-            <div class="footerText">
-              <a href="index.html" class="footerLogo">
-                  <a class="navbar-brand" href="index.html"><img class="lazyestload" data-src="img/bharati-logo.jpeg"  width="202" height="139" src="" alt="logo"></a>
-                
+            </a>
+            <p style="margin-top: 30px">We invite you to explore the beauty transformations we've facilitated and experience the Bharati difference for yourself. </p>
+            <p> Each client’s journey with us is a step towards discovering their own unique beauty, enhanced and celebrated.</p>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-12 paddingLeft">
+          <div class="footerInfoTitle">
+            <h4>Useful Links</h4>
+          </div> 
+          <div class="useLink">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
 
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link" href="service.html">Service</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="gallery-v1.html">Gallery</a>
+              </li>
+               <li class="nav-item ">
+                <a class="nav-link" href="blog-left-sidebar.html">Blog</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="accrodion.html">Contact Us</a>
+              </li> 
+            </ul>
+          </div> 
+         </div> 
+         <div class="col-sm-3 col-xs-12">
+          <div class="footerInfoTitle">
+            <h4>Gallery</h4>
+          </div>
+          <div class="footerGallery row">
+            <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
+              <a href="gallery-v1.html">
+                <img class="lazyestload" data-src="img/home/gallery-66.jpeg" src="img/home/gallery-66.jpeg" alt="gallery-img">
               </a>
-              <p>We invite you to explore the beauty transformations we've facilitated and experience the Bharati difference for yourself. </p>
-              <p> Each client’s journey with us is a step towards discovering their own unique beauty, enhanced and celebrated.</p>
+            </div>
+
+            <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
+              <a href="gallery-v1.html">
+                <img class="lazyestload" data-src="img/home/gallery-3.jpg" src="img/home/gallery-3.jpg" alt="gallery-img">
+              </a>
+            </div>
+
+            <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
+              <a href="gallery-v1.html">
+                <img class="lazyestload" data-src="img/home/gallery-5.jpeg" src="img/home/gallery-5.jpeg" alt="gallery-img">
+              </a>
+            </div>
+
+            <div class="col-4 col-md-6 col-lg-4">
+              <a href="gallery-v1.html">
+                <img class="lazyestload" data-src="img/home/gallery-55.jpeg" src="img/home/gallery-55.jpeg" alt="gallery-img">
+              </a>
+            </div>
+
+            <div class="col-4 col-md-6 col-lg-4">
+              <a href="gallery-v1.html">
+                <img class="lazyestload" data-src="img/home/gallery-8.jpg" src="img/home/gallery-8.jpg" alt="gallery-img">
+              </a>
+            </div>
+
+            <div class="col-4 col-md-6 col-lg-4">
+              <a href="gallery-v1.html">
+                <img class="lazyestload" data-src="img/home/gallery-2.jpg" src="img/home/gallery-2.jpg" alt="gallery-img">
+              </a>
             </div>
           </div>
-          <div class="col-sm-3 col-xs-12 paddingLeft">
-            <div class="footerInfoTitle">
-              <h4>Useful Links</h4>
-            </div> 
-            <div class="useLink">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-  
-                <li class="nav-item ">
-                  <a class="nav-link" href="about.html">About Us</a>
-                </li>
-  
-                <li class="nav-item ">
-                  <a class="nav-link" href="service.html">Service</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="gallery-v1.html">Gallery</a>
-                </li>
-                 <li class="nav-item ">
-                  <a class="nav-link" href="blog-left-sidebar.html">Blog</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="accrodion.html">Contact Us</a>
-                </li> 
-              </ul>
-            </div> 
-           </div> 
-           <div class="col-sm-3 col-xs-12">
-            <div class="footerInfoTitle">
-              <h4>Gallery</h4>
-            </div>
-            <div class="footerGallery row">
-              <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-66.jpeg" src="img/home/gallery-66.jpeg" alt="gallery-img">
-                </a>
-              </div>
+        </div> 
 
-              <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-3.jpg" src="img/home/gallery-3.jpg" alt="gallery-img">
-                </a>
-              </div>
+        <div class="col-sm-3 col-xs-12">
+          <div class="footerInfoTitle">
+            <h4>Newsletters</h4>
+          </div>
 
-              <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-5.jpeg" src="img/home/gallery-5.jpeg" alt="gallery-img">
-                </a>
-              </div>
+          <div class="footerText">
+            <p>Sign up for our mailing list to get latest updates and offers.</p>
+            <form class="input-group">
+              <input type="text" class="form-control" required="" placeholder="Email address" aria-describedby="basic-addon21">
+              <button type="submit" class="input-group-addon" id="basic-addon21">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-              <div class="col-4 col-md-6 col-lg-4">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-55.jpeg" src="img/home/gallery-55.jpeg" alt="gallery-img">
-                </a>
-              </div>
+    <!-- COPY RIGHT -->
+    <div class="clearfix copyRight">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 order-md-1">
+            <ul class="list-inline socialLink">
+              <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="javascript:void(0)"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+              <!-- <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
 
-              <div class="col-4 col-md-6 col-lg-4">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-8.jpg" src="img/home/gallery-8.jpg" alt="gallery-img">
-                </a>
-              </div>
-
-              <div class="col-4 col-md-6 col-lg-4">
-                <a href="gallery-v1.html">
-                  <img class="lazyestload" data-src="img/home/gallery-2.jpg" src="img/home/gallery-2.jpg" alt="gallery-img">
-                </a>
-              </div>
-            </div>
-          </div> 
-
-          <div class="col-sm-3 col-xs-12">
-            <div class="footerInfoTitle">
-              <h4>Newsletters</h4>
-            </div>
-
-            <div class="footerText">
-              <p>Sign up for our mailing list to get latest updates and offers.</p>
-              <form class="input-group">
-                <input type="text" class="form-control" required="" placeholder="Email address" aria-describedby="basic-addon21">
-                <button type="submit" class="input-group-addon" id="basic-addon21">Send</button>
-              </form>
+          <div class="col-md-7">
+            <div class="copyRightText">
+              <p>&copy; 2024 Copyright Bharati Salon</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-      <!-- COPY RIGHT -->
-      <div class="clearfix copyRight">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5 order-md-1">
-              <ul class="list-inline socialLink">
-                <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                <!-- <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li> -->
-              </ul>
-            </div>
-
-            <div class="col-md-7">
-              <div class="copyRightText">
-                <p>&copy; 2024 Copyright Bharati Salon</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+  </footer>
+</div> 
   </div>
 
 

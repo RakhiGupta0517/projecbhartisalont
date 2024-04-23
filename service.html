@@ -55,10 +55,23 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    color: palevioletred;
+    color: magenta;
+    border: 1px dotted magenta;
+    padding: 2px
   
     
   }
+  .blinking-line {
+                        /* border-bottom: 2px solid black; Adjust thickness and color as needed */
+                        animation: blink 1s infinite; /* Blinking animation */
+                    }
+                
+                    @keyframes blink {
+                        50% {
+                            opacity: 0; /* Makes the line invisible */
+                        }
+                    }
+ 
 </style>
 
 </head>
@@ -66,69 +79,72 @@
 <body id="body" class="body-wrapper static">
   <div class="se-pre-con"></div>
   <div class="main-wrapper">
-    <!-- HEADER -->
-    <header id="pageTop" class="header">
+      <!-- HEADER -->
+      <header id="pageTop" class="header">
 
-      <!-- TOP INFO BAR -->
-      <div class="top-info-bar">
-        <div class="container">
-          <div class="top-bar-right">
-            <ul class="list-inline">
-              <!-- <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> info@yourdomain.com</a></li> -->
-               <li><a href="#">We accept walk-In (Threading Only)</a></li>
-              <li><span><i class="fa fa-phone" aria-hidden="true"></i> Call Us: (916) 467-0571</span></li>
-              <li><span><i class="fa fa-mobile-phone" aria-hidden="true"></i>  (916) 293-9265</span></li>
-            </ul>
+          <!-- TOP INFO BAR -->
+          <div class="top-info-bar">
+            <div class="container">
+              <div class="top-bar-right">
+                <ul class="list-inline blinking-line">
+    
+                   
+                    
+                 
+                   <li><a href="#">We accept walk-In (Threading Only)</a></li>
+                  <li><span><i class="fa fa-phone" aria-hidden="true"></i> Call Us: (916) 467-0571</span></li>
+                  <li><span><i class="fa fa-mobile-phone" aria-hidden="true"></i>  (916) 293-9265</span></li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-md main-nav navbar-light">
-        <div class="container">
-     
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand" href="index.html"><img class="lazyestload" data-src="img/Bharti Salon (1).png" src="" alt="logo"></a>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-
-              <li class="nav-item ">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-
-              <li class="nav-item ">
-                <a class="nav-link" href="service.html">Service</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="gallery-v1.html">Gallery</a>
-              </li>
-               <li class="nav-item ">
-                <a class="nav-link" href="blog-left-sidebar.html">Blog</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="accrodion.html">Contact Us</a>
-              </li> 
-            </ul>
-          </div>
-          <div class="cart_btn">
-            <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="badge">0</span></a>
-          </div>
-
-        
-
-
-      </nav>
+    
+          <!-- NAVBAR -->
+          <nav class="navbar navbar-expand-md main-nav navbar-light">
+            <div class="container">
+         
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+    
+              <a class="navbar-brand" style="width:20%; background-color: black; border-radius: 250px"  href="index.html"><img class="lazyestload"  data-src="img/home/logo.jpeg" src="" alt="logo"></a>
       
-    </header>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+    
+                  <li class="nav-item ">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+    
+                  <li class="nav-item ">
+                    <a class="nav-link" href="service.html">Service</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="gallery-v1.html">Gallery</a>
+                  </li>
+                   <li class="nav-item ">
+                    <a class="nav-link" href="blog-left-sidebar.html">Blog</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="accrodion.html">Contact Us</a>
+                  </li> 
+                </ul>
+              </div>
+              <div class="cart_btn">
+                <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="badge">0</span></a>
+              </div>
+    
+            
+    
+    
+          </nav>
+          
+        </header>
 
 
 
@@ -180,17 +196,17 @@
 <ul>
   <h4><li class="item">Eyebrows <span>$12</span></li></h4>
   <h4><li class="item">Forhead <span>$7</span></li></h4>
-  <h4><li class="item">Upper Lips <span>$12</span></li></h4>
-  <h4><li class="item">Lower Lips <span>$3</span></li></h4>
+  <h4><li class="item">Upper Lips <span>$7</span></li></h4>
+  <h4><li class="item">Lower Lips <span>$5</span></li></h4>
   <h4><li class="item">Full Face Threading <span>$40</span></li></h4>
   <h4><li class="item">Chin <span>$7</span></li></h4>
-  <h4><li class="item">Chin co<span>$8</span></li></h4>
+  <h4><li class="item">Chin core<span>$8</span></li></h4>
   <h4><li class="item">Neck <span>$10</span></li></h4>
   <h4><li class="item">Sideburns<span>$10</span></li></h4>
   <h4><li class="item">Jawline<span>$10</span></li></h4>
   <h4><li class="item">Side of Neck <span>$15</span></li></h4>
-  <h4><li class="item">Unibrow <span>$4</span></li></h4>
-  <h4><li class="item">Full face Neck <span>$48</span></li></h4>
+  <h4><li class="item">Unibrow <span>$5</span></li></h4>
+  <h4><li class="item">Full face + Neck <span>$48</span></li></h4>
   <h4><li class="item">Half Face(without Forhead & Eyebrow)<span>$30</span></li></h4>
   <h4><li class="item">Chicks <span>$8</span></li></h4>
   <h4><li class="item"> Men's Chicks <span>$20</span></li></h4>
@@ -212,7 +228,7 @@
   <h4><li class="item">Upper Lips <span>$10</span></li></h4>
   <h4><li class="item">Lower Lips<span>$8</span></li></h4>
   <h4><li class="item">Chin <span>$12</span></li></h4>
-  <h4><li class="item">Neck co<span>$18</span></li></h4>
+  <h4><li class="item">Neck<span>$18</span></li></h4>
   <h4><li class="item">Forhead <span>$10</span></li></h4>
   <h4><li class="item">Sideburns<span>$13</span></li></h4>
   <h4><li class="item">Full Face<span>$50</span></li></h4>
@@ -239,7 +255,7 @@
   <h4><li class="item">Bikni Line<span>$30</span></li></h4>
   <h4><li class="item">Hands<span>$17</span></li></h4>
   <h4><li class="item">Thigh<span>$20</span></li></h4>
-  <h4><li class="item">Full Body<span>$250</span></li></h4>
+  <h4><li class="item">Full Body<span>$255</span></li></h4>
   
                               
                               
@@ -250,29 +266,31 @@
                           </div>
 
                           <div class="tab-pane" id="hairextension">
-                            <div class="varietyContent">
+                            <div class="varietyContent" >
                               <img src="img/home/variety-3.jpg" data-src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Facials</h3>
+                              <h3 style="color: magenta">Facials</h3>
                               <!-- <h4></h4> -->
 
-                              <h4>Fruit Facial(Express)......................................................       $60  -----40 Mins</h4>
-                              <h4>Papaya Facial..................................................................       $60  -----40 Mins</h4>
-                              <h4>Whitening Facial..............................................................       $60  -----40 Mins</h4>
-                              <h4>VLcc Insta Glow Facial
+                              <h4 style="color: magenta">Fruit Facial...................................................................       $60  -----40 Mins</h4>
+                              <h4 style="color: magenta">Papaya Facial..................................................................       $60  -----40 Mins</h4>
+                              <h4 style="color: magenta">Whitening Facial..............................................................       $60  -----40 Mins</h4>
+                              <h4 style="color: magenta">VLcc Insta Glow Facial
                                   ...................................................       $65  -----45 Mins</h4>
-                              <h4> Lotus Pearl Facial.............................................................       $65  -----60 Mins</h4>
-                              <h4>Lotus Gold Facial.............................................................       $65  -----45 Mins</h4>
-                              <h4> Pearl Facial......................................................................       $80  -----60 Mins</h4>
-                              <h4>Diamond Facial...................................................................       $80  -----60 Mins</h4>
-                              <h4>Saffron Chandan Facial.....................................................       $80  -----60 Mins</h4>
+                              <h4 style="color: magenta"> Lotus Pearl Facial.............................................................       $65  -----45 Mins</h4>
+                              <h4 style="color: magenta">Lotus Gold Facial.............................................................       $65  -----45 Mins</h4>
+                              <h4 style="color: magenta"> Pearl Facial......................................................................       $80  -----60 Mins</h4>
+                              <h4 style="color: magenta">Diamond Facial...................................................................       $80  -----60 Mins</h4>
+                              <h4 style="color: magenta">Saffron Chandan Facial.....................................................       $80  -----60 Mins</h4>
 
-                              <h4>Shanaz Gold Facial..............................................................       $90  -----60 Mins</h4>
-                              <h4>Anti Acne Treatments Facial..........................................       $95  -----60 Mins</h4>
-                              <h4>Back Facial.......................................................................................       $100  </h4>
-                              <h4>Back Full Scrub...................................................................................       $80  </h4>
+                              <h4 style="color: magenta">Shanaz Gold Facial..............................................................       $90  -----60 Mins</h4>
+                              <h4 style="color: magenta">Anti Acne Treatments Facial..........................................       $95  -----60 Mins</h4>
+                              <h4 style="color: magenta">Back Facial.......................................................................................       $100  </h4>
+                              <h4 style="color: magenta">Back Full Scrub...................................................................................       $80  </h4>
                              
                                 <h2>MEN's</h2>
-                                <h4>Men Facial(Choose any)......................................................       $100  -----60 Mins</h4>
+                                <h4 style="color: magenta">Men Basic Facial(papaya, Whitening, vlcc, fruit)......................       $180  -----45 Mins</h4>
+
+                                <h4 style="color: magenta">Men Advaced(Choose any)...............................................................       $100  -----60 Mins</h4>
                                
 
 
@@ -347,10 +365,13 @@
 
                               <h3>Hair Color</h3>
                               <!-- <h4>$40.00 Per Head</h4> -->
-                              <h4>Root Touch Up.........................................................................................       $70+</h4>
-                              <h4>Full Hair Color..........................................................................................       $85+</h4>
-                              <h4>Color Correction .....................................................................................       $100+</h4>
-                             
+                          
+                              <h4><li class="item">Root Touch Up<span> $70+</span></li></h4>
+                              <h4><li class="item">Full hair color<span>  $85
++</span></li></h4>
+                              <h4><li class="item">Shoulder Length <span>$80+</span></li></h4>
+                              <h4><li class="item">Color Correction <span>$100</span></li></h4>
+                              
                          
 
                               
@@ -394,49 +415,49 @@
     </section>
 
 
-
-    <section class="clearfix offersSection patternbg">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-xs-12">
-            <div class="offerContent">
-              <img class="lazyestload" src="img/home/offer-1.jpeg" data-src="img/home/offer-1.jpeg" alt="Image Offer">
-              <div class="offerMasking">
-                <div class="offerTitle"><h4><a href="#"> Threading</a></h4></div>
-              </div>
-              <div class="offerPrice"><h5>$12</h5></div>
+<!-- OFFERS SECTION -->
+<section class="clearfix offersSection patternbg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-xs-12">
+          <div class="offerContent">
+            <img class="lazyestload" src="img/home/offer-1.jpeg" data-src="img/home/offer-1.jpeg" alt="Image Offer">
+            <div class="offerMasking">
+              <div class="offerTitle"><h4><a href="#"> Threading</a></h4></div>
             </div>
+            <div class="offerPrice"><h5>$12</h5></div>
           </div>
-          <div class="col-sm-3 col-xs-12">
-            <div class="offerContent">
-              <img class="lazyestload" data-src="img/home/offer-2.jpeg" src="img/home/offer-2.jpeg" alt="Image Offer">
-              <div class="offerMasking">
-                <div class="offerTitle"><h4><a href="#">Oil Massage</a></h4></div>
-              </div>
-              <div class="offerPrice"><h5>$40</h5></div>
+        </div>
+        <div class="col-sm-3 col-xs-12">
+          <div class="offerContent">
+            <img class="lazyestload" data-src="img/home/offer-22.jpeg" src="img/home/offer-22.jpeg" alt="Image Offer">
+            <div class="offerMasking">
+              <div class="offerTitle"><h4><a href="#">Oil Massage</a></h4></div>
             </div>
+            <div class="offerPrice"><h5>$40</h5></div>
           </div>
-          <div class="col-sm-3 col-xs-12">
-            <div class="offerContent">
-              <img class="lazyestload" src="img/home/offer-3.jpg" data-src="img/home/offer-3.jpg" alt="Image Offer">
-              <div class="offerMasking">
-                <div class="offerTitle"><h4><a href="#">Facials</a></h4></div>
-              </div>
-              <div class="offerPrice"><h5>$60+</h5></div>
+        </div>
+        <div class="col-sm-3 col-xs-12">
+          <div class="offerContent">
+            <img class="lazyestload" src="img/home/offer-3.jpg" data-src="img/home/offer-3.jpg" alt="Image Offer">
+            <div class="offerMasking">
+              <div class="offerTitle"><h4><a href="#">Facials</a></h4></div>
             </div>
+            <div class="offerPrice"><h5>$60+</h5></div>
           </div>
-          <div class="col-sm-3 col-xs-12">
-            <div class="offerContent">
-              <img class="lazyestload" src="img/home/offer-4.jpg" data-src="img/home/offer-4.jpg" alt="Image Offer">
-              <div class="offerMasking">
-                <div class="offerTitle"><h4><a href="#">Hair Heena</a></h4></div>
-              </div>
-              <div class="offerPrice"><h5>$70</h5></div>
+        </div>
+        <div class="col-sm-3 col-xs-12">
+          <div class="offerContent">
+            <img class="lazyestload" src="img/home/offer-41.jpg" data-src="img/home/offer-41.jpg" alt="Image Offer">
+            <div class="offerMasking">
+              <div class="offerTitle"><h4><a href="#">Hair Heena</a></h4></div>
             </div>
+            <div class="offerPrice"><h5>$60+</h5></div>
           </div>
         </div>
       </div>
-    </section> 
+    </div>
+  </section> 
 
 
     <section class="clearfix productSection"> 
@@ -465,8 +486,8 @@
                         <li><i class="fa fa-star" aria-hidden="true"></i></li>
                         <li><i class="fa fa-star" aria-hidden="true"></i></li>
                         <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
                       </ul>
                       <p>Ayurvedic Hair Oils are known to hydrate the scalp and the hair. It is a boon for people with dry hair. It acts as a conditioner by providing shine to the hair.
                           Applying a good ayurvedic hair oil just to the ends of the hair may act as a hair mask or a pre-conditioning hair mask.
@@ -493,109 +514,103 @@
 
     <!-- PRICING SECTION -->
     <section class="clearfix pricingSection patternbg">
-      <div class="container">
-        <div class="secotionTitle">
-          <h2><span>Amazing </span>Services Pricing</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <div class="priceTableWrapper">
-              <div class="priceImage">
-                <img src="img/home/pricing-1.jpeg" data-src="img/home/pricing-1.jpg" alt="Image Price" class="img-responsive lazyestload">
-                <div class="maskImage">
-                  <h3>Threading</h3>
+        <div class="container">
+          <div class="secotionTitle">
+            <h2><span>Amazing </span>Services Pricing</h2>
+          </div>
+  
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="priceTableWrapper">
+                <div class="priceImage">
+                  <img src="img/home/pricing-1.jpeg" data-src="img/home/pricing-1.jpg" alt="Image Price" class="img-responsive lazyestload">
+                  <div class="maskImage">
+                    <h3>Threading</h3>
+                  </div>
+                  <div class="priceTag">
+                    <h4>$40</h4>
+                  </div>
                 </div>
-                <div class="priceTag">
-                  <h4>$40</h4>
+                <div class="priceInfo">
+                  <ul class="list-unstyled">
+                    <li>Full Face Threading</li>
+                    <!-- <li>Nail Cutting And Styling</li>
+                    <li>Spa Therapy</li>
+                    <li>Hair Coloring</li> -->
+                  </ul>
+                  <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
                 </div>
-              </div>
-              <div class="priceInfo">
-                <ul class="list-unstyled">
-                  <li>Full Face Threading</li>
-                  <!-- <li>Nail Cutting And Styling</li>
-                  <li>Spa Therapy</li>
-                  <li>Hair Coloring</li> -->
-                </ul>
-                <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
               </div>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="priceTableWrapper">
-              <div class="priceImage">
-                <img src="img/home/pricing-2.jpg" data-src="img/home/pricing-2.jpg" alt="Image Price" class="img-responsive lazyestload">
-                <div class="maskImage">
-                  <h3>Waxing</h3>
+  
+            <div class="col-md-6 col-lg-3">
+              <div class="priceTableWrapper">
+                <div class="priceImage">
+                  <img src="img/home/pricing-2.jpg" data-src="img/home/pricing-2.jpg" alt="Image Price" class="img-responsive lazyestload">
+                  <div class="maskImage">
+                    <h3>Waxing</h3>
+                  </div>
+                  <div class="priceTag">
+                    <h4>$255</h4>
+                  </div>
                 </div>
-                <div class="priceTag">
-                  <h4>$255</h4>
+                <div class="priceInfo">
+                  <ul class="list-unstyled">
+                    <li>Full Body Wax</li>
+                  
+                  </ul>
+                  <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
                 </div>
-              </div>
-              <div class="priceInfo">
-                <ul class="list-unstyled">
-                  <li>Full Body Wax</li>
-                  <!-- <li>Nail Cutting And Styling</li>
-                  <li>Spa Therapy</li>
-                  <li>Hair Coloring</li> -->
-                </ul>
-                <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
               </div>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="priceTableWrapper">
-              <div class="priceImage">
-                <img src="img/home/pricing-3.jpg" data-src="img/home/pricing-3.jpg" alt="Image Price" class="img-responsive lazyestload">
-                <div class="maskImage">
-                  <h3>D-Tan Pack</h3>
+  
+            <div class="col-md-6 col-lg-3">
+              <div class="priceTableWrapper">
+                <div class="priceImage">
+                  <img src="img/home/pricing-3.jpg" data-src="img/home/pricing-3.jpg" alt="Image Price" class="img-responsive lazyestload">
+                  <div class="maskImage">
+                    <h3>Facial</h3>
+                  </div>
+                  <div class="priceTag">
+                    <h4>$130</h4>
+                  </div>
                 </div>
-                <div class="priceTag">
-                  <h4>$130</h4>
+                <div class="priceInfo mb-md-0">
+                  <ul class="list-unstyled">
+                    <li>Shahnaj Gold facial + D-Tan Pack</li>
+                 
+                  </ul>
+                  <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
                 </div>
-              </div>
-              <div class="priceInfo mb-md-0">
-                <ul class="list-unstyled">
-                  <li>Shahnaj Gold facial</li>
-                  <!-- <li>Gold facial</li>
-                  <li>Spa Therapy</li>
-                  <li>Hair Coloring</li> -->
-                </ul>
-                <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
               </div>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="priceTableWrapper">
-              <div class="priceImage">
-                <img src="img/home/pricing-4.jpg" data-src="img/home/pricing-4.jpg" alt="Image Price" class="img-responsive lazyestload">
-                <div class="maskImage">
-                  <h3>Waxing</h3>
+  
+            <div class="col-md-6 col-lg-3">
+              <div class="priceTableWrapper">
+                <div class="priceImage">
+                  <img src="img/home/pricing-4.jpg" data-src="img/home/pricing-4.jpg" alt="Image Price" class="img-responsive lazyestload">
+                  <div class="maskImage">
+                    <h3>Waxing</h3>
+                  </div>
+                  <div class="priceTag">
+                    <h4>$115</h4>
+                  </div>
                 </div>
-                <div class="priceTag">
-                  <h4>$115</h4>
+                <div class="priceInfo mb-0">
+                  <ul class="list-unstyled">
+                    <li>Full Legs Wax , full Arms wax and Under Arms Wax</li>
+                  
+                  </ul>
+                  <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
                 </div>
-              </div>
-              <div class="priceInfo mb-0">
-                <ul class="list-unstyled">
-                  <li>Full Legs Wax ,Arms wax and Under Arms Wax</li>
-                  <!-- <li>Full Arms Wax</li>
-                  <li>Under Arms Wax </li>
-                  <li>Hair Coloring</li> -->
-                </ul>
-                <a href="cart.html" class="btn btn-primary first-btn">Buy Now</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section> 
+      </section> -->
 
-      <!-- CONTACT US SECTION -->
-      <section class="clearfix contactSection padding" >
+    <!-- CONTACT US SECTION -->
+    <section class="clearfix contactSection padding" >
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-lg-7 col-xl-8">
@@ -630,11 +645,11 @@
               <div class="holdingInfo patternbg">
                 <p style="font-size: 20px;">BHARATI SALON</p>
                 <p>Visit us Monday through Sunday, to indulge in our pampering services. Relax and rejuvenate with us!"</p>
-                <p>Mon to Sat : 10Am to 8pm</p>
-                <p>Sun : 10Am to 7pm</p>
+                <p style="font-size: 20px;" >Mon to Sat : 10Am to 8pm</p>
+                <p style="font-size: 20px;" >Sun : 10Am to 7pm</p>
                 <ul>
                   <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1008 Riley St. Suite 5, Folsom, CA 95630, United State </li>
-                  <li><i class="fa fa-phone" aria-hidden="true"></i> (916)467 0571</li>
+                  <li><i class="fa fa-phone" aria-hidden="true"></i> (916)467 0571/ (916)293-9265</li>
                   <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a> <br></li>
                 </ul>
               </div>
@@ -646,7 +661,11 @@
           </div>
         </div>
       </section>
-
+  
+  
+  
+  
+   
      <!-- FOOTER -->
      <footer style="background-image: url(img/home/footer-bg.jpg);">
       <!-- BACK TO TOP BUTTON -->
@@ -658,11 +677,11 @@
             <div class="col-sm-3 col-xs-12">
               <div class="footerText">
                 <a href="index.html" class="footerLogo">
-                    <a class="navbar-brand" href="index.html"><img class="lazyestload" data-src="img/bharati-logo.jpeg"  width="202" height="139" src="" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img  class="lazyestload" data-src="img/bharati-logo.jpeg"  width="202"  src="" alt="logo"></a>
                   
   
                 </a>
-                <p>We invite you to explore the beauty transformations we've facilitated and experience the Bharati difference for yourself. </p>
+                <p style="margin-top: 30px">We invite you to explore the beauty transformations we've facilitated and experience the Bharati difference for yourself. </p>
                 <p> Each client’s journey with us is a step towards discovering their own unique beauty, enhanced and celebrated.</p>
               </div>
             </div>
@@ -778,7 +797,7 @@
           </div>
         </div>
       </footer>
-  </div>
+    </div> 
 
 
   <!-- FANCY SEARCH -->
